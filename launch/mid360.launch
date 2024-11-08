@@ -1,0 +1,10 @@
+<launch>
+    <arg name="project" default="pcap2ros"/>
+
+    <param name="pcap_filepath" type="string" value="/media/ryan/74E494DAE494A042/" />
+    <param name="pcap_filename" type="string" value="32_mid360_out.pcap" />
+
+    <node pkg="$(arg project)" type="pcap2ros" name="pcap2ros" output="screen" respawn="false" />
+    <!-- <node pkg="$(arg project)" type="$(arg project)_optimation" name="$(arg project)_optimation" output="screen" respawn="false" /> -->
+
+</launch>
